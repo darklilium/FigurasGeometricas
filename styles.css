@@ -1,0 +1,244 @@
+:root {
+    --verySmall: 1.0rem;
+    --small: 1.8rem;
+    --medium: 2.2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.hero-section {
+    display: flex;
+    width: 100vw;
+    height: 200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section__titleContainer {
+ 
+        display: flex;
+        width: 70%;
+        text-align: center;
+        flex-direction: column;
+    
+}
+
+.hero-section h1{
+    font-weight: 400;
+    font-style: normal;
+    line-height: 21.09px;
+    font-size: var(--medium);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero-section h2{
+    font-weight: 400;
+    font-style: normal;
+    line-height: 21.09px;
+    font-size: var(--small);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.hero-section__imgContainer {
+    background: linear-gradient(180deg, rgba(249, 74, 158, 0.2) 0%, rgba(49, 74, 203, 0.2) 47.71%, rgba(0, 206, 194, 0.2) 100%);
+    width: 48%;
+    height: 100%;
+    display: grid;
+    padding-bottom: 5%;
+}
+
+.hero-section__imgContainer img{
+ 
+        justify-self: center;
+        align-self: center;
+    
+}
+
+/* description section*/
+
+
+.description {
+    width: 100vw;
+    height: 119px;
+    background-image: url("./img/Section1bg.png");
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.description h4{
+    font-weight: 400;
+    font-style: bold;
+    line-height: 12px;
+    font-size: var(--verySmall);
+    padding: 50px 52px;
+}
+
+/* Cuadrado Section*/
+
+.section-cuadrado, .section-triangulo, .section-circulo {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+}
+
+.section-cuadrado {
+    background: rgba(49, 74, 203, 0.1);
+}
+
+.section-cuadrado__element, 
+.section-triangulo__element, 
+.section-circulo__element{
+    width: 56%;
+}
+
+.section-cuadrado-interactionArea,
+.section-triangulo-interactionArea,
+.section-circulo-interactionArea {
+    width: 44%;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+}
+
+.section-cuadrado-calculator, 
+.section-cuadrado-operations,
+.section-triangulo-calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-cuadrado-calculator__size{
+    display: flex;
+    padding-top: 10px;
+}
+
+.section-cuadrado__element--title,
+.section-triangulo__element--title,
+.section-circulo__element--title {
+    font-size: 1.4rem;
+    margin: 10px;
+}
+
+.section-cuadrado__element--title{
+    color: rgba(49,74,203,1);
+}
+
+.section-cuadrado__element--description,
+.section-triangulo__element--description,
+.section-circulo__element--description
+{
+    padding: 10px;
+}
+
+
+.section-cuadrado-operations:nth-child(1) {
+    padding-top: 10px;
+}
+
+
+/*for all boxes o inputs*/
+
+.calculator__line-size, 
+.calculator__perimeter, 
+.calculator__area{    
+    border: 0;
+    border-bottom: black 1px solid;
+    background: rgba(49,74,203,0);
+    width: 25px;
+}
+
+.ladoCuadrado{
+    font-weight: 400;
+    line-height: 10px;
+    padding-right: 6px;
+}
+
+.section-cuadrado-operations {
+    padding-top: 15px;
+}
+.operations__perimeter, 
+.operations__area{
+    display: flex;  
+    padding: 5px;
+}
+
+/*Triangulo section*/
+
+.section-triangulo{
+    background: rgba(249, 74, 158, 0.1);
+    height: 280px;
+}
+
+.section-triangulo__element--title{
+    color:  rgba(249, 74, 158, 1);
+    
+}
+
+.section-triangulo-calculator--size{
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+    
+}
+
+.section-triangulo-calculator__size > div{
+display: flex;
+padding-top: 8px;
+}
+
+
+/*Circulo section*/
+.section-circulo{
+    background: rgba(0, 206, 194, 0.15);
+
+}
+
+
+
+.section-circulo__element--title{
+    color: rgba(0, 206, 194, 1);
+
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    align-self: center;
+    justify-content: center;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-self: center;
+    place-items: center;
+    width: 30%;
+}
+footer svg{
+    display: flex;
+    place-content: center;
+    object-fit: cover;
+}
