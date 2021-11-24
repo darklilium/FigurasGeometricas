@@ -1,7 +1,8 @@
-## Figuras Geometricas
+# Figuras Geometricas
+## _Website that allows you to calculate the perimeter and area of: circle, triangle and square_
 
-# Website that allows you to calculate the perimeter and area for : circle, square and triangle.
-# Prototype in Figma
-# Responsive
-# Vanilla JS
-
+### Features
+- Prototype made in Figma 
+- Responsive
+- ✨Magical✨
+- Super Vanilla JS
