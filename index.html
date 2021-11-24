@@ -12,28 +12,33 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <section class="hero-section">
+        <div class="hero-bg">
+            <img src="./img/bgHero2.png" alt="">
+        </div>
         <div class="hero-section__titleContainer">
-            <h2>Figuras</h2>
-            <h1>Geométricas</h1>
+            <h2>FIGURAS</h2>
+            <h1>GEOMÉTRICAS</h1>
         </div>
-        <div class="hero-section__imgContainer">
-            <img src="./img/FGIcon.png">
-        </div>
+        
         
     </section>
    
 
     <section class="description">
         <h4>Calcula el Perímetro (P) y Área (A) de cualquiera de las 3 figuras:</h4>
+        <a href="#cuadrado">Cuadrado</a>
+        <a href="#triangulo">Triángulo</a>
+        <a href="#circulo">Círculo</a>
     </section>
-
-    <section class="section-cuadrado">
+ 
+    
+    <section class="section-cuadrado" id="cuadrado">
         <article class="section-cuadrado__element">
             <h2 class="section-cuadrado__element--title">Cuadrado</h2>
             <p class="section-cuadrado__element--description">El cuadrado es una figura geométrica caracterizada por ser un tipo de paralelogramo con cuatro lados de igual longitud y paralelos entre sí. Un cuadrado es entonces un polígono regular. Esto quiere decir que todos sus lados son idénticos, y además todos sus ángulos interiores miden lo mismo (en este caso, 90º).</p>
         </article>
-        <div class="section-cuadrado-interactionArea">
-            <img src="./img/CuadradoImg.png">
+        <article class="section-cuadrado-interactionArea">
+            <div class="section-cuadrado-img"><img src="./img/CuadradoImg.png"></div>
 
             <div class="section-cuadrado-calculator">
                 <div class="section-cuadrado-calculator__size">
@@ -47,19 +52,19 @@
                    <div class="operations__area"><p>A:</p> <input class="calculator__area" type="number"></div>
                 </div>
             </div> 
-        </div>
+        </article>
     </section>
 
-    <section class="section-triangulo">
+    <section class="section-triangulo" id="triangulo">
         <article class="section-triangulo__element">
             <h2 class="section-triangulo__element--title">Triángulo</h2>
             <p class="section-triangulo__element--description">El triángulo es un polígono conformado por tres lados, así como por tres vértices y tres ángulos interiores. El triángulo es una figura geométrica muy importante y base de otros polígonos.</p>
         </article>
         <div class="section-triangulo-interactionArea">
-            <img src="./img/TrianguloImg.png">
+            <div class="section-triangulo-img"><img src="./img/TrianguloImg.png"></div>
 
             <div class="section-triangulo-calculator">
-                <div class="section-triangulo-calculator__size">
+                <div class="section-triangulo-calculator--size">
                     <div>
                         <label for="ladoTriangulo1"><h3>Lado {a} [cm]:</h3></label>
                         <input class="calculator__line-size" id="ladoTriangulo1" type="number">
@@ -84,13 +89,13 @@
         </div>
     </section>
 
-    <section class="section-circulo">
+    <section class="section-circulo" id="circulo">
         <article class="section-circulo__element">
             <h2 class="section-circulo__element--title">Círculo</h2>
             <p class="section-circulo__element--description">Un círculo es una figura plana formada por una CIRCUNFERENCIA y su interior. Un círculo es una figura muy especial.  La línea curva que conforma el contorno de un círculo es una CIRCUNFERENCIA, que es una línea curva cerrada en la que todos sus puntos están a la misma distancia de su centro.</p>
         </article>
         <div class="section-circulo-interactionArea">
-            <img src="./img/circuloImg.png">
+            <div class="section-circulo-img" ><img src="./img/circuloImg.png"></div>
 
             <div class="section-cuadrado-calculator">
                 <div class="section-cuadrado-calculator__size">
@@ -106,20 +111,23 @@
             </div> 
         </div>
     </section>
+  
     <footer>
-        
-       
-            
-        <div>
+        <div class="footer-container-img">
             <svg width="14" height="19" viewBox="0 0 14 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="0.291664" y="5.23608" width="9.35549" height="10.142" fill="#314ACB"/>
                 <ellipse cx="9.75593" cy="14.0101" rx="3.5899" ry="4.00963" fill="#00CEC2"/>
                 <path d="M8.01537 0L12.6317 7.96029H3.39907L8.01537 0Z" fill="#F94A9E"/>
                 </svg>
-            <p>Figuras Geométricas</p>
-            <h6>Evelyn Hernandez ♥ Figma</h6>
         </div>
+            <div class="footer-container-signature">
+                <p>Figuras Geométricas</p>
+                <h6>Evelyn Hernandez ♥ Figma</h6>
+            </div>
+           
+       
     </footer>
+     
 
      
 
