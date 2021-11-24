@@ -45,14 +45,14 @@
 
             <div class="section-cuadrado-calculator">
                 <div class="section-cuadrado-calculator__size">
-                    <label for="ladoCuadrado"><h3 class="labelCalculator">Lado {a} [cm]:</h3></label>
-                    <input class="calculator__line-size" type="number">
+                    <label for="inputLadoCuadrado"><h3 class="labelCalculator">Lado {a} [cm]:</h3></label>
+                    <input class="calculator__line-size" type="number" onkeyup="calculoCuadrado()" id="inputLadoCuadrado">
                 </div>
                
 
                 <div class="section-cuadrado-operations">
-                   <div class="operations__perimeter"><p>P:</p> <input class="calculator__perimeter" type="number"></div>
-                   <div class="operations__area"><p>A:</p> <input class="calculator__area" type="number"></div>
+                   <div class="operations__perimeter"><p>P:</p> <input class="calculator__perimeter" type="text" id="perimetroCuadradoValor"></div>
+                   <div class="operations__area"><p>A:</p> <input class="calculator__area" type="text" id="areaCuadradoValor"></div>
                 </div>
             </div> 
         </article>
@@ -69,24 +69,24 @@
             <div class="section-triangulo-calculator">
                 <div class="section-triangulo-calculator__size">
                     <div>
-                        <label for="ladoTriangulo1"><h3 class="labelCalculator">Lado {a} [cm]:</h3></label>
-                        <input class="calculator__line-size" id="ladoTriangulo1" type="number">
+                        <label for="inputLadoTriangulo1"><h3 class="labelCalculator">Lado {a} [cm]:</h3></label>
+                        <input class="calculator__line-size" type="number" id="inputLadoTriangulo1" onkeyup="calculoTriangulo()">
                     </div>
                     <div>
-                        <label for="ladoTriangulo2"><h3 class="labelCalculator">Lado {b} [cm]:</h3></label>
-                        <input class="calculator__line-size" type="number" id="ladoTriangulo2">
+                        <label for="inputLadoTriangulo2"><h3 class="labelCalculator">Lado {b} [cm]:</h3></label>
+                        <input class="calculator__line-size" type="number" id="inputLadoTriangulo2" onkeyup="calculoTriangulo()">
                     </div>
                     <div>
-                        <label for="ladoTriangulo3"><h3 class="labelCalculator">Lado {c} [cm]:</h3></label>
-                        <input class="calculator__line-size" type="number" id="ladoTriangulo3">
+                        <label for="inputLadoTriangulo3"><h3 class="labelCalculator">Lado {c} [cm]:</h3></label>
+                        <input class="calculator__line-size" type="number" id="inputLadoTriangulo3" onkeyup="calculoTriangulo()">
                     </div>
                    
                 </div>
                
 
                 <div class="section-triangulo-operations">
-                   <div class="operations__perimeter"><p>P:</p> <input class="calculator__perimeter" type="number"></div>
-                   <div class="operations__area"><p>A:</p> <input class="calculator__area" type="number"></div>
+                   <div class="operations__perimeter"><p>P:</p> <input class="calculator__perimeter" type="number" id="perimetroTrianguloValor"></div>
+                   <div class="operations__area"><p>A:</p> <input class="calculator__area" type="number" id="areaTrianguloValor"></div>
                 </div>
             </div> 
         </div>
@@ -102,14 +102,14 @@
 
             <div class="section-circulo-calculator">
                 <div class="section-circulo-calculator__size">
-                    <label for="ladoCirculo"><h3 class="labelCalculator">Radio {r} [cm]:</h3></label>
-                    <input class="calculator__line-size" type="number">
+                    <label for="inputRadioCirculo"><h3 class="labelCalculator">Radio {r} [cm]:</h3></label>
+                    <input class="calculator__line-size" type="number" id="inputRadioCirculo" onkeyup="calculoCirculo()">
                 </div>
                
 
                 <div class="section-circulo-operations">
-                   <div class="operations__perimeter"><p>P:</p> <input class="calculator__perimeter" type="number"></div>
-                   <div class="operations__area"><p>A:</p> <input class="calculator__area" type="number"></div>
+                   <div class="operations__perimeter"><p>P:</p> <input class="calculator__perimeter" type="number" id="inputPerimetroCirculoValor"></div>
+                   <div class="operations__area"><p>A:</p> <input class="calculator__area" type="number"  id="inputAreaCirculoValor"></div>
                 </div>
             </div> 
         </div>
