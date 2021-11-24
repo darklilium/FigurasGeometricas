@@ -1,0 +1,82 @@
+:root {
+    --superbigl: 5.4rem;
+    --verybig: 10rem;
+    --big: 10.2rem;
+}
+
+@media (min-width:780px) {
+
+    .hero-bg img{
+        width: 100vw;
+    }
+}
+
+
+@media (min-width:1024px) {
+   
+    .hero-bg img{
+        width: 100vw;
+        min-height: 900px;
+    }
+
+    .hero-bg {
+        min-height: 900px;
+        min-width: 320px;
+        max-width: 100vw;
+    }
+
+    .description {
+       
+        min-height: 900px;
+       
+    }
+    .section-cuadrado, .section-triangulo, .section-circulo {
+      
+        min-height: 900px;
+      
+    }
+
+    .section-cuadrado-img img, .section-triangulo-img img, .section-circulo-img img {
+        width: 80%;
+    }
+
+    .hero-section h1 {
+        font-size: var(--verybig);
+        padding-top: 100px;
+    }
+
+    .hero-section h2 {
+        font-size: var(--big);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .description h4 {
+        font-weight: 400;
+        font-style: normal;
+        line-height: 75px;
+        font-size: var(--sizesmall);
+    }
+
+    .description a:link {
+       
+        font-size: var(--large);
+      
+    }
+
+    .section-cuadrado__element--title, .section-triangulo__element--title, .section-circulo__element--title {
+        font-size: var(--large);
+       
+    }
+
+    .section-cuadrado__element--description, .section-triangulo__element--description, .section-circulo__element--description {
+        line-height: 50px;
+        font-size: var(--medium);
+        text-align: center;
+    }
+
+   .labelCalculator{
+        font-size: var(--small);
+    }
+
+
+}

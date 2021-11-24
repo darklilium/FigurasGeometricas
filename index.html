@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a website to calculate the perimeter and area of square, triangle and circle">
     <title>Figuras Geometricas</title>
     <script src="./figuras.js"></script>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" media="(min-width: 450px)" href="./tablet.css">
+    <link rel="stylesheet" media="(min-width: 800px)" href="./desktop.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <section class="hero-section">
         <div class="hero-bg">
@@ -38,11 +41,11 @@
             <p class="section-cuadrado__element--description">El cuadrado es una figura geométrica caracterizada por ser un tipo de paralelogramo con cuatro lados de igual longitud y paralelos entre sí. Un cuadrado es entonces un polígono regular. Esto quiere decir que todos sus lados son idénticos, y además todos sus ángulos interiores miden lo mismo (en este caso, 90º).</p>
         </article>
         <article class="section-cuadrado-interactionArea">
-            <div class="section-cuadrado-img"><img src="./img/CuadradoImg.png"></div>
+            <div class="section-cuadrado-img"><img src="./img/cuadrado.svg"></div>
 
             <div class="section-cuadrado-calculator">
                 <div class="section-cuadrado-calculator__size">
-                    <label for="ladoCuadrado"><h3>Lado {a} [cm]:</h3></label>
+                    <label for="ladoCuadrado"><h3 class="labelCalculator">Lado {a} [cm]:</h3></label>
                     <input class="calculator__line-size" type="number">
                 </div>
                
@@ -61,27 +64,27 @@
             <p class="section-triangulo__element--description">El triángulo es un polígono conformado por tres lados, así como por tres vértices y tres ángulos interiores. El triángulo es una figura geométrica muy importante y base de otros polígonos.</p>
         </article>
         <div class="section-triangulo-interactionArea">
-            <div class="section-triangulo-img"><img src="./img/TrianguloImg.png"></div>
+            <div class="section-triangulo-img"><img src="./img/triangulo.svg"></div>
 
             <div class="section-triangulo-calculator">
-                <div class="section-triangulo-calculator--size">
+                <div class="section-triangulo-calculator__size">
                     <div>
-                        <label for="ladoTriangulo1"><h3>Lado {a} [cm]:</h3></label>
+                        <label for="ladoTriangulo1"><h3 class="labelCalculator">Lado {a} [cm]:</h3></label>
                         <input class="calculator__line-size" id="ladoTriangulo1" type="number">
                     </div>
                     <div>
-                        <label for="ladoTriangulo2"><h3>Lado {b} [cm]:</h3></label>
+                        <label for="ladoTriangulo2"><h3 class="labelCalculator">Lado {b} [cm]:</h3></label>
                         <input class="calculator__line-size" type="number" id="ladoTriangulo2">
                     </div>
                     <div>
-                        <label for="ladoTriangulo3"><h3>Lado {c} [cm]:</h3></label>
+                        <label for="ladoTriangulo3"><h3 class="labelCalculator">Lado {c} [cm]:</h3></label>
                         <input class="calculator__line-size" type="number" id="ladoTriangulo3">
                     </div>
                    
                 </div>
                
 
-                <div class="section-cuadrado-operations">
+                <div class="section-triangulo-operations">
                    <div class="operations__perimeter"><p>P:</p> <input class="calculator__perimeter" type="number"></div>
                    <div class="operations__area"><p>A:</p> <input class="calculator__area" type="number"></div>
                 </div>
@@ -95,16 +98,16 @@
             <p class="section-circulo__element--description">Un círculo es una figura plana formada por una CIRCUNFERENCIA y su interior. Un círculo es una figura muy especial.  La línea curva que conforma el contorno de un círculo es una CIRCUNFERENCIA, que es una línea curva cerrada en la que todos sus puntos están a la misma distancia de su centro.</p>
         </article>
         <div class="section-circulo-interactionArea">
-            <div class="section-circulo-img" ><img src="./img/circuloImg.png"></div>
+            <div class="section-circulo-img" ><img src="./img/circulo.svg"></div>
 
-            <div class="section-cuadrado-calculator">
-                <div class="section-cuadrado-calculator__size">
-                    <label for="ladoCuadrado"><h3>Radio {r} [cm]:</h3></label>
+            <div class="section-circulo-calculator">
+                <div class="section-circulo-calculator__size">
+                    <label for="ladoCirculo"><h3 class="labelCalculator">Radio {r} [cm]:</h3></label>
                     <input class="calculator__line-size" type="number">
                 </div>
                
 
-                <div class="section-cuadrado-operations">
+                <div class="section-circulo-operations">
                    <div class="operations__perimeter"><p>P:</p> <input class="calculator__perimeter" type="number"></div>
                    <div class="operations__area"><p>A:</p> <input class="calculator__area" type="number"></div>
                 </div>
@@ -122,7 +125,7 @@
         </div>
             <div class="footer-container-signature">
                 <p>Figuras Geométricas</p>
-                <h6>Evelyn Hernandez ♥ Figma</h6>
+                <p>Evelyn Hernandez ® 2021 « ♥ » Figma</p>
             </div>
            
        
